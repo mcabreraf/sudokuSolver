@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/sudokuSolver.css"">
+    <title>Sudoku Solver!</title>
+</head>
+<body>
+
+    <h1> Sudoku solver! </h1>
+
+    <div id="bar">
+        <button id="restart">Restart</button>
+        <span id="mess"></span>
+        <button id="solve">Solve it!</button>
+    </div>
+
+    <div id = "container">
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        <div class="square">
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>
+            <div class="lilSquare">
+                <input type="text" oninput="this.value = this.value.replace(/[^1-9]/g, '')" maxlength="1">
+            </div>   
+        </div>
+        
+    </div>
+
+    <script src="assets/js/sudokuSolver.js"></script>
+</body>
+</html>
